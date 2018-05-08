@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kongwen">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.TextViewAlwaysMarqueeActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.SerializableActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name=".activity.MessengerActivity"
+            android:launchMode="singleTask">
+        </activity>
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="service.MessengerService"
+            android:process=":remote" />
+        <service
+            android:name=".aidl.BookManagerService"
+            android:process=":remote" />
+
+        <activity android:name=".aidl.BookManagerActivity" />
+    </application>
+
+</manifest>
