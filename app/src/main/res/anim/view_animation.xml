@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+    <!-- 平移动画 -->
+    <!--<translate-->
+        <!--android:duration="5000"-->
+        <!--android:fromXDelta="0"-->
+        <!--android:fromYDelta="0"-->
+        <!--android:interpolator="@android:anim/linear_interpolator"-->
+        <!--android:toXDelta="800"-->
+        <!--android:toYDelta="1000" />-->
+    <!-- 旋转动画 -->
+    <rotate
+        android:duration="4000"
+        android:fromDegrees="0"
+        android:toDegrees="90" />
+
+</set>
