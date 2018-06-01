@@ -23,4 +23,16 @@
         android:gravity="bottom"
         android:padding="@dimen/dp_10"
         android:text="帧动画" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:background="#C43763"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="属性动画"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_25" />
 </LinearLayout>
